@@ -112,6 +112,8 @@ def main(args):
     else:
         final_result = img_gen
 
+    torch.save(latent, f"results/latent.pt")
+
     return final_result
 
 
